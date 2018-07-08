@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.7.2)  7 JUL 2018 09:54
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.7.2)  8 JUL 2018 09:11
  restricted system commands enabled.
 **Valentin_Joly_CV_en.tex
 (./Valentin_Joly_CV_en.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.090 seconds
+luaotfload | main : initialization completed in 0.140 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -691,9 +691,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package hyperref Info: Option `colorlinks' set `true' on input line 44.
 Package hyperref Info: Option `breaklinks' set `true' on input line 44.
 
-No file Valentin_Joly_CV_en.aux.
-
+(./Valentin_Joly_CV_en.aux)
 \openout1 = Valentin_Joly_CV_en.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
@@ -712,6 +712,7 @@ LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 48.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 48.
+
 (/usr/share/texlive/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -855,6 +856,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
+
+(./Valentin_Joly_CV_en.out) (./Valentin_Joly_CV_en.out)
 \@outlinefile=\write3
 
 \openout3 = Valentin_Joly_CV_en.out
@@ -977,39 +980,33 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 829.
  (./Valentin_Joly_CV_en.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 829.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 829.
+Package rerunfilecheck Info: File `Valentin_Joly_CV_en.out' has not changed.
+(rerunfilecheck)             Checksum: 99C0206E5D06EB1D32954091C817F308;825.
 
-
-Package rerunfilecheck Warning: File `Valentin_Joly_CV_en.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Valentin_Joly_CV_en.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  99C0206E5D06EB1D32954091C817F308;825.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 21349 strings out of 494489
+ 21377 strings out of 494489
  125171,460012 words of node,token memory allocated
  406 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 4 attribute, 53 glue_spec, 4 attribute_list
 , 1 write nodes
    avail lists: 1:1,2:949,3:190,4:34,5:1088,6:5179,7:1491,8:220,9:449,10:9,11:45
 5
- 24986 multiletter control sequences out of 65536+600000
+ 24999 multiletter control sequences out of 65536+600000
  48 fonts using 9608519 bytes
- 56i,12n,73p,1068b,330s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 56i,12n,73p,1070b,330s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/fonts/lato/Lato-BoldItalic.ttf></usr/share/fonts/lato/Lato-Bold.ttf>
 </usr/share/fonts/lato/Lato-Italic.ttf></usr/share/texlive/texmf-dist/fonts/open
 type/public/fontawesome/FontAwesome.otf></usr/share/fonts/lato/Lato-Regular.ttf>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Valentin_Joly_CV_en.pdf (7 pages, 107657 bytes).
+Output written on Valentin_Joly_CV_en.pdf (7 pages, 108487 bytes).
 
-PDF statistics: 105 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+PDF statistics: 143 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
  20 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 97 words of extra memory for PDF output out of 10000 (max. 100000000)
 

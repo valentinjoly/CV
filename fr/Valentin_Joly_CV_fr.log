@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.8.20)  8 OCT 2018 00:29
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.8.20)  8 OCT 2018 03:44
  restricted system commands enabled.
 **Valentin_Joly_CV_fr.tex
 (./Valentin_Joly_CV_fr.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.113 seconds
+luaotfload | main : initialization completed in 0.108 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1016,14 +1016,14 @@ Overfull \vbox (20.32909pt too high) detected at line 82
 pg>] [2] [3] [4] [5] [6] [7] [8] 
 AED: lastpage setting LastPage
 [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 895.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 895.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 899.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 899.
  (./Valentin_Joly_CV_fr.aux
 luatex-hyphen: loading patterns and exceptions for: french (\language4)
 luatex-hyphen: info: no hyphenation exceptions for this language
 Language french already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 895.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 895.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 899.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 899.
 Package rerunfilecheck Info: File `Valentin_Joly_CV_fr.out' has not changed.
 (rerunfilecheck)             Checksum: E6C1FA9FBC227EE9D739CE30F8C6FE70;820.
 )
@@ -1045,7 +1045,7 @@ ts/truetype/public/lato/Lato-LigIta.ttf></usr/share/texlive/texmf-dist/fonts/tru
 etype/public/lato/Lato-Lig.ttf></usr/share/fonts/lato/Lato-Regular.ttf></usr/sha
 re/texlive/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf></usr/sh
 are/fonts/lato/Lato-Bold.ttf></usr/share/fonts/lato/Lato-Heavy.ttf>
-Output written on Valentin_Joly_CV_fr.pdf (9 pages, 205705 bytes).
+Output written on Valentin_Joly_CV_fr.pdf (9 pages, 205622 bytes).
 
 PDF statistics: 241 PDF objects out of 1000 (max. 8388607)
  156 compressed objects within 2 object streams

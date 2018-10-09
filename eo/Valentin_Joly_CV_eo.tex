@@ -1,0 +1,953 @@
+\documentclass[letterpaper,12pt]{article}
+
+% MARGINS
+\usepackage[
+    top=1.75cm,
+    bottom=1.75cm,
+    outer=2cm,
+    inner=2cm,
+    heightrounded,
+    marginparwidth=3cm,
+    marginparsep=0.5cm]{geometry}
+
+
+% LANGUAGE
+\usepackage{polyglossia}
+\setdefaultlanguage{esperanto}
+
+
+% FONTS
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Lato}
+\newfontfamily{\light}
+  [Ligatures=TeX, UprightFont={* Light}, ItalicFont={* Light Italic},
+   BoldFont={* Medium}, BoldItalicFont={* Medium Italic}]{Lato}
+\newfontfamily{\heavy}
+  [Ligatures=TeX, UprightFont={* Heavy}, ItalicFont={* Heavy Italic},
+   BoldFont={* Heavy}, BoldItalicFont={* Heavy Italic}]{Lato}
+
+
+% PAGE LAYOUT
+\usepackage{parskip}
+\usepackage{titlesec}
+\titleformat{\section}{\large\heavy\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+
+% COLOURS
+\usepackage{xcolor}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+
+
+% HYPERLINKS
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    breaklinks,
+    urlcolor=linkcolour,
+    linkcolor=linkcolour}
+
+% TABLES
+\usepackage{multirow}
+\usepackage{tabularx}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\lhead{}\chead{}\rhead{}\lfoot{}\cfoot{}
+\rfoot{\bfseries\small Paĝo \thepage{} de \pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\footskip=5mm
+
+
+% DOCUMENT
+\begin{document}
+\pagestyle{fancy}
+
+
+% HEADER
+\begin{tabularx}{\textwidth}{@{}lllR@{}}
+  \multicolumn{3}{@{}l@{}}{\Large\heavy Valentin Joly}\vspace{1mm} & \multirow{4}{*}{\includegraphics[width=2.6cm]{../valentin.jpg}} \\
+  \multicolumn{3}{@{}l@{}}{\large\bfseries Molekula biologo • Biokomputikisto}\vspace{4mm} &  \\
+  \vspace{0.75mm} \faPhoneSquare~+1 (438) 495-3215
+  & \faEnvelopeSquare~\href{mailto:valentin.joly@gmail.com}{valentin.joly@gmail.com}
+  & \faLinkedinSquare~\href{https://www.linkedin.com/in/valentinjoly}{valentinjoly} & \\
+
+  \faSkype~valentin.joly
+  & \faExternalLinkSquare~\href{http://vjoly.net/eo/index.html}{http://vjoly.net}
+  & \faGithub~\href{https://github.com/valentinjoly}{valentinjoly} & \\
+\end{tabularx}
+
+\vspace{4mm}
+
+{\light Doktorigxonto cxe la laboratorio de la P-ro Matton, mi celas malkovri la
+molekulajn mekanismojn kiuj kontrolas prezigotajn reproduktajn barojn en sovagxaj
+terpomoj. Mi speciale interesigxas pri atrakcio de polen-tuboj, kun duobla
+metodo, kiu kombinas biokomputiko (RNA-vicrivelado) kaj molekula biologio
+(proteino-esprimo kaj funkciaj analizoj).
+\emph{Pli da informoj cxe \href{http://vjoly.net/eo/index.html}{vjoly.net}.}}
+\vspace{5mm}
+
+
+
+
+% EDUCATION
+\section{Edukado}
+
+\begin{tabularx}{\textwidth}{@{}l|X@{}}
+
+  {\heavy Ph.D.}
+  & {\heavy Doktoriĝo pri biologio,} {\bfseries ekde 2013}
+    ~~~\small{(tezo prezentota en junio 2019)} \\
+
+  {\heavy M.Sc.}
+  & {\heavy Magistro pri biologio,} {\bfseries 2012}
+    ~~~\small{(akcelita transiro al doktoriĝo en 2013)} \vspace{0.5mm} \\
+  & \hspace{1.5mm} Universitato de Montrealo, \emph{Montrealo, QC, Kanado} \\
+  & \hspace{1.5mm} {\small \textbf{Projekto:} Molekula komunikado inter masklaj kaj inaj gametofitoj,} \\
+  & \hspace{1.5mm} {\small \phantom{\textbf{Projekto:}} kaj reproduktaj baroj en sovaĝaj terpomoj (\emph{Solanum} sect. \emph{Petota}).} \\
+
+  \multicolumn{2}{c}{} \\
+
+  {\heavy B.Sc.}
+  & {\heavy Bakalaŭro pri biologio, internacia programo,} {\bfseries 2011} \vspace{0.5mm} \\
+  & \hspace{1.5mm} Universitato Pierre-kaj-Marie-Curie (UPMC),
+    \emph{Parizo, Francio}: jaroj 1 kaj 2 \\
+  & \hspace{1.5mm} Universitato de Montrealo (UdeM),
+    \emph{Montrealo, QC, Kanado}: jaro 3 \\
+
+\end{tabularx}
+
+\vspace{6mm}
+
+
+% RESEARCH EXPERIENCE
+\section[Scienca sperto]{Scienca sperto
+         \hfill \small{{\mdseries\faFlask}~Molekula biologio~~~{\mdseries\faCode}~Biokomputiko}}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+{\heavy Kanado}
+& {\heavy Doktora esplorprojekto} {\bfseries ekde 2013} \\
+& {\em P-ro Daniel P. Matton, IRBV, Universitato de Montrealo}
+  \vspace{0.5mm} \\
+& \small \hspace{1.5mm} \faFlask~DNA- kaj RNA-teknikoj. Klonado. Esprimo kaj purigo de proteinoj. \\
+& \small \hspace{1.5mm} \faFlask~Kulturo de plantaj ĉeloj. Eksperimentoj de aktraksio de polen-tuboj. Mikrofluidiko. \\
+& \small \hspace{1.5mm} \faFlask~Mikroskopio: epifluoreska, konfokusa kaj elektrona mikroskopio (SEM, TEM). \\
+& \small \hspace{1.5mm} \faCode~Python kaj R programado. Disvolviĝo de la sekvenca serĉilo KAPPA. \\
+& \small \hspace{1.5mm} \faCode~Transcriptomiko: RNA-vicrivelado. DNA-mikropuntaro. Genesprimiĝo-analizo. Anotado. \\
+& \small \hspace{1.5mm} \faCode~Proteomiko: LC-MS-datuma analizo. Sekretomiko. \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy Svedio}
+& {\heavy Internacia kunlaboro,} {\bfseries 2016--2018} \\
+& {\em D-ro Johan Edqvist, Universitato de Linköping}
+  \vspace{0.5mm} \\
+& \small \hspace{1.5mm} \faFlask~Esprimo kaj purado de proteinoj en \emph{Pichia pastoris}. \\
+& \small \hspace{1.5mm} \faCode~Disvolviĝo de nsLTP-prognozilo kaj datumbazo de plantaj nsLTP. \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy Japanio}
+& {\heavy Somera programo de la JSPS,} {\bfseries junio–aŭgusto 2016} \\
+& {\em P-ro Tetsuya Higashiyama, ITbM, Universitato de Nagojo}
+  \vspace{0.5mm} \\
+& \small \hspace{1.5mm} \faFlask~Disvolviĝo de mikrofluidikaj aparatoj por ekzamenoj pri polen-tuboj. \\
+& \small \hspace{1.5mm} \faFlask~Enkonduko al la 2-fotona konfokusa mikroskopio. \\
+
+\end{tabularx}
+
+\newpage
+
+\section*{Scienca sperto \small{(daŭrigo)}
+          \hfill \small{{\mdseries\faFlask}~Molekula biologio~~~{\mdseries\faCode}~Biokomputiko}}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+{\heavy Usono}
+& {\heavy Internacia staĝo de esplorado,} {\bfseries aprilo–majo 2014} \\
+& {\em P-ro Willie J. Swanson, Universitato de Vaŝingtonio}
+  \vspace{0.5mm} \\
+& \small \hspace{1.5mm} \faCode~Analizo de genetikaj variantoj (GATK). \\
+& \small \hspace{1.5mm} \faCode~Analizoj de molekula evoluado kaj pozitiva selektado (codeml). \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy Argentino}
+& {\heavy Botanika vojaĝo,} {\bfseries aprilo–majo 2012} \\
+& {\em Kunlaborado kun la D-ro Franco E. Chiarini, Nacia Universitato de Kordobo}
+  \vspace{0.5mm} \\
+& \small \hspace{1.5mm} \faFlask~Kolekto de sovaĝaj terpomoj en la Andoj. \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy Kanado}
+& {\heavy Staĝo de esplorado,} {\bfseries januaro–aŭgusto 2011} \\
+& {\em P-ro Daniel P. Matton, Universitato de Montrealo}
+  \vspace{0.5mm} \\
+& \small \hspace{1.5mm} \faFlask~Molekula klonado. Biolistiko. Epifluoreska kaj konfokusa mikroskopio. \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy Francio}
+& {\heavy Staĝo de esplorado,} {\bfseries junio–julio 2010} \\
+& {\em P-ro Christophe Bailly, CNRS/Universitato Pierre-kaj-Marie-Curie, Parizo}
+  \vspace{0.5mm} \\
+& \small \hspace{1.5mm} \faFlask~Biologio de sema dormado kaj ĝermado. \vspace{2.5mm} \\
+& {\heavy Mallongatempa enkonduka staĝo de esplorado,} {\bfseries januaro 2009} \\
+& {\em P-ro Chris Bowler, CNRS/Normala Altlernejo de Parizo (ENS), Parizo}
+  \vspace{0.5mm} \\
+& \small \hspace{1.5mm} \faFlask~Elektroforezo de proteinoj. Imunoprecipitado. “Western Blot”. \\
+
+\end{tabularx}
+
+\vspace{6mm}
+
+
+% EXTRA TRAINING
+\section{Alia trejnado}
+
+\begin{tabularx}{\textwidth}{@{}r|lX@{}}
+
+\heavy{Biokomputiko}
+& \multicolumn{2}{l}{{\heavy Enreta trejnado pri biokomputiko,} {\bfseries 2016--2018}} \\
+& \multicolumn{2}{l}{\em Universitato de Kalifornio ĉe San-Diego, en Coursera \vspace{0.5mm}} \\
+
+& \small \hspace{1.5mm} {\bfseries 1.} {\em Trovi kaŝitaj mesaĝoj en la DNA.}
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/SPRUS2D6NH}{SPRUS2D6NH} \\
+
+& \small \hspace{1.5mm} {\bfseries 2.} {\em Genara vicrivelado.}
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/73HUUXBY64}{73HUUXBY64} \\
+
+& \small \hspace{1.5mm} {\bfseries 3.} {\em Kompari genojn, proteinojn kaj genarojn.}
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/HY7JCN6UV2}{HY7JCN6UV2} \\
+
+& \small \hspace{1.5mm} {\bfseries 4.} {\em Molekula evoluado.}
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/VYKM2WT4792A}{VYKM2WT4792A} \\
+
+& \small \hspace{1.5mm} {\bfseries 5.} {\em Genara datumscienco kaj aretanalizo.}
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/M6ZPV8VCEH}{M6ZPV8VCEH} \\
+
+& \small \hspace{1.5mm} {\bfseries 6.} {\em Trovi mutaciojn en la DNA kaj la proteinoj.}
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/EVDAXLXV9L}{EVDAXLXV9L} \\
+
+& \small \hspace{1.5mm} {\bfseries 7.} {\em Fina Projekto: Grandaj datenoj en biologio.}
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/56XJX7TMHYVM}{56XJX7TMHYVM} \\
+
+& \small \hspace{1.5mm} {\bfseries Fina atestilo.}
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/specialization/H528Q2K9KYB6}{H528Q2K9KYB6} \\
+
+\multicolumn{2}{c}{} \\
+
+\heavy{Python/R}
+& \multicolumn{2}{l}{{\heavy Enretaj kursoj pri biokomputiko,} {\bfseries 2016}} \\
+& \multicolumn{2}{l}{\em Johns Hopkins University, on Coursera \vspace{0.5mm}} \\
+
+& \small \hspace{1.5mm} •~\emph{Python por genara datumscienco}.
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/XHKWDB4XD7}{XHKWDB4XD7} \\
+
+& \small \hspace{1.5mm} •~\emph{Enkonduko al genomikaj teknologioj }.
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/U88T89XKR2}{U88T89XKR2} \\
+
+& \small \hspace{1.5mm} •~\emph{Programado R}.
+& \small Atestilo \href{https://www.coursera.org/account/accomplishments/verify/X8NKEQAUU4}{X8NKEQAUU4} \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy Anotado}
+& \multicolumn{2}{l}{{\heavy Internacia seminario pri unkcia anotado de proteinoj,} {\bfseries 2012}} \\
+{\heavy de proteinoj}
+& \multicolumn{2}{l}{\em BLAST2GO, Universitato de Kalifornio ĉe Davis} \\
+
+\end{tabularx}
+
+
+\vspace{6mm}
+
+% PUBLICATIONS
+\section[Publikaĵoj]{Publikaĵoj \hfill \small{*Ko-unuaj aŭtoroj}}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+2018
+& Salminen TA, Eklund DM, \textbf{Joly V}, Blomqvist K, Matton DP
+  kaj Edqvist J. (2018).
+  Deciphering the evolution and development of the cuticle by studying lipid
+  transfer proteins in mosses and liverworts.
+  \emph{Plants}, 7(1), 6.
+  DOI: \href{http://doi.org/10.3390/plants7010006}{10.3390/plants7010006}
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2015
+& \textbf{Joly V} kaj Matton DP. (2015).
+  KAPPA, a simple algorithm for the discovery and clustering of proteins defined
+  by a key amino acid pattern.
+  \emph{Bioinformatics}, 31(11), 1716--1723.
+  DOI: \href{http://doi.org/10.1093/bioinformatics/btv047}
+  {10.1093/bioinformatics/btv047}
+  \vspace{3mm}
+  \\
+
+& Liu Y*, \textbf{Joly V*}, Dorion S, Rivoal J kaj Matton DP. (2015).
+  The plant ovule secretome: a different view toward pollen-pistil interactions.
+  \emph{Journal of Proteome Research}, 14(11):4763--75.
+  DOI: \href{http://doi.org/10.1021/acs.jproteome.5b00618}
+  {10.1021/acs.jproteome.5b00618}
+  \vspace{3mm}
+  \\
+
+& Lafleur É*, Kapfer C*, \textbf{Joly V}, Liu Y, Tebbji F, Daigle C,
+  Gray-Mitsumune M, Cappadocia M, Nantel A kaj Matton DP. (2015).
+  The ScFRK1 MAPK kinase kinase (MAPKKK) from \emph{Solanum chacoense} is
+  involved in embryo sac and pollen development.
+  \emph{Journal of Experimental Botany}, 66(7), 1833--1843.
+  DOI: \href{http://doi.org/10.1093/jxb/eru524}{10.1093/jxb/eru524}
+  \\
+
+\multicolumn{2}{c}{} \\
+
+{\em venontaj}
+& \textbf{Joly V}, Tebbji F kaj Matton DP.
+  Pollination type recognition from a distance by the ovary is revealed by a
+  global transcriptomic analysis.
+  {\bfseries\em Submetota en oktobro 2018.}
+  \vspace{3mm}
+  \\
+
+& \textbf{Joly V}, Liu Y kaj Matton DP.
+  Comparative RNA-sequencing reveals female gameotphyte-sac specific transcripts
+  in the \emph{frk1} embryo sac-less mutant from \emph{Solanum chacoense}.
+  {\bfseries\em Submetota en decembro 2018.}
+  \vspace{3mm}
+  \\
+
+& \textbf{Joly V} kaj Matton DP.
+  A transcriptomic time-course reveals developmentally regulated transcripts
+  during ovule genesis and maturation in \emph{Solanum chacoense}.
+  {\bfseries\em Submetota en marto 2019.} \\
+
+\end{tabularx}
+
+\vspace{6mm}
+
+\section[Komputila kodo]{Komputila kodo}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+2015
+& \textbf{Joly V} kaj Matton DP. Key Aminoacid Pattern-based Protein Analyzer
+  (KAPPA). \\
+& \small \hspace{1.5mm} •~Versio 1.1 publikita sub permesilo GPL en
+  \href{https://github.com/valentinjoly/kappa-1.1}{GitHub}. \\
+& \small \hspace{1.5mm} •~Versio 1.0 publikita sub permesilo GPL en
+  \href{https://sourceforge.net/projects/kappa-sequence-search/}{SourceForge}.
+  \\
+
+\end{tabularx}
+
+\vspace{6mm}
+
+\section[Scienca popularigo]{Scienca popularigo}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+2016
+& \textbf{Joly V}. {\em Le sexe des plantes avec Valentin Joly.} Radio-intervjuo
+  por la scienca populara programo
+  \href{http://ici.radio-canada.ca/emissions/les_annees_lumiere/2009-2010/chronique.asp?idChronique=404672}{\emph{Les années lumière}}
+  en Radio-Canada. Disdonita la 24-an de aprilo 2016. \\
+
+\multicolumn{2}{c}{} \\
+
+2014
+& \textbf{Joly V}. {\em Les mots d’amour des plantes à fleurs}. Artikolo
+  skribita por \emph{L'ARN messager}, la enreta ĵuranlo de la biologiaj
+  studentoj de la Universitato de Montrealo. Publikita la 19-a de decembro 2014.
+  \\
+
+\end{tabularx}
+
+\newpage
+
+% ORAL PRESENTATIONS
+\section[Parolaj prezentoj]{Parolaj prezentoj
+         \small en kongresoj kun kolega revizio \hfill {\mdseries\faStar}~Premio}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+2017
+& \faStar~\textbf{Joly V}, Viallet C, Liu Y, Zaro A, Ceriotti F kaj Matton DP.
+  \emph{Deciphering species-specific pollen tube guidance in \emph{Solanum}.}
+  CSPB Eastern Regional Meeting, Montrealo, QC, Kanado;
+  24–25 novembro 2017.
+  \vspace{1.5mm}
+  \\
+
+& \textbf{Joly V}, Viallet C, Liu Y kaj Matton DP.
+  \emph{Reproductive cysteine-rich proteins: key players in \emph{Solanum}
+  speciation?}
+  Plant Biology 2017, Honolulu, HI, Usono;
+  23–28 junio 2017.
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2015
+& \faStar~\textbf{Joly V} kaj Matton DP.
+  \emph{Plants’ secret words of love: rapid evolution of pollen–pistil
+  recognition proteins drives reproductive isolation of wild potatoes.}
+  Botany 2015, Edmontono, AB, Kanado;
+  26–29 julio 2015.
+  \vspace{1.5mm}
+  \\
+
+2013
+& \faStar~\textbf{Joly V} kaj Matton DP.
+  \emph{Comment éviter les liaisons dangereuses : secrets d’alcôve des pommes
+  de terre.}
+  Journées du Centre SÈVE, Wendake, QC, Kanado;
+  7–8 novembro 2013.
+  \vspace{1.5mm}
+  \\
+
+& \faStar~\textbf{Joly V}, Liu Y kaj Matton DP.
+  \emph{Divergence des protéines reproductives et maintien des barrières de
+  spéciation chez les pommes de terre sauvages.}
+  23\textsuperscript{e} Symposium des Sciences biologiques,
+  Universitato de Montrealo, Montrealo, QC, Kanado;
+  21 marto 2013.
+  \\
+
+\end{tabularx}
+
+\vspace{6mm}
+
+\section[Invitata parolisto]{Parolaj prezentoj \small kiel invitata parolisto}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+2018
+& \textbf{Joly V} kaj Matton DP.
+  \emph{Potato sexomics: deciphering species-specific pollen tube guidance in
+  wild potatoes with high-throughput sequencing technologies.}
+  Dep. de Molekula, Ĉela kaj Disvolviĝa Biologio,
+  Universitato Yale, Nov-Haveno, CT, Usono;
+  22 oktobro 2018.
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2016
+& \textbf{Joly V} kaj Matton DP.
+  \emph{Pollen tube guidance and reproductive isolation in wild potatoes.}
+  Dep. de Funkcia genaro,
+  Universitato de Kanazaŭa, Japanio;
+  18 agosto 2016.
+  \vspace{1.5mm}
+  \\
+
+& \textbf{Joly V} kaj Matton DP.
+  \emph{Species-specific pollen tube guidance in wild potatoes.}
+  Laboratorio de Molekula biologio de plantoj,
+  Universitato de Kioto, Japanio;
+  12 agosto 2016.
+  \vspace{1.5mm}
+  \\
+
+& \textbf{Joly V} kaj Matton DP.
+  \emph{Deciphering potatoes’ words of love.}
+  Institute for Transformative bio-Molecules (ITbM),
+  Universitato de Nagojo, Japanio;
+  13 julio 2016.
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2015
+& \textbf{Joly V} kaj Matton DP.
+  \emph{Sex among wild potatoes: ladies wear the pants.}
+  Centre for Structural and Functional Genomics,
+  Universitato Concordia, Montrealo, QC, Kanado;
+  16 julio 2015.
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2014
+& \textbf{Joly V} kaj Matton DP.
+  \emph{Cell-cell communication between gametophytes and reproductive isolation
+  in wild potatoes.}
+  Dept. of Genome Sciences, Universitato de Vaŝingtonio, Seatlo, WA, Usono;
+  24 aprilo 2014.
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2013
+& \textbf{Joly V} kaj Matton DP.
+  \emph{Species-specificity of pollen-pistil interactions in wild potatoes.}
+  Instituto de Genetiko, Ĉina Akademio de Sciencoj, Pekino, Ĉinio;
+  24 oktobro 2013. 
+  \\
+
+\end{tabularx}
+
+
+% POSTER PRESENTATIONS
+\section[Prezentoj kun afiŝo]{Prezentoj kun afiŝo
+         \small en kongresoj kun kolega revizio \hfill {\mdseries\faStar}~Premio}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+2018
+& \textbf{Joly V} kaj Matton DP.
+  \emph{Long-distance relationships: how the ovary perceives different
+  pollination types at a distance.}
+  Plant Biology 2018, Montrealo, QC, Kanado;
+  14–18 julio 2018.
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2016
+& \faStar~\textbf{Joly V}, Liu Y, Dorion S, Rivoal J kaj Matton DP.
+  \emph{Ovule secretomics reveal the importance of post-transcriptional
+  regulation of reproductive proteins.}
+  Plant Reproduction 2016, Tusono, AZ, Usono;
+  18–23 marto 2016.
+  \vspace{1.5mm}
+  \\
+
+& \faStar~\textbf{Joly V} kaj Matton DP.
+  \emph{KAPPA: exploring -omics data to detect and cluster cysteine-rich
+  proteins.}
+  [sama kongreso]
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2015
+& \faStar~\textbf{Joly V} kaj Matton DP.
+  \emph{KAPPA: meeting the challenge of proteome-wide detection and clustering
+  of cysteine-rich proteins.}
+  High Performance Computing Symposium HPCS 2015, Montrealo, QC, Kanado;
+  17–19 junio 2015.
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2013
+& \textbf{Joly V}, Liu Y kaj Matton DP.
+  \emph{Interspecific divergence of reproductive proteins: the keystone of
+  species-specific fertilization in wild potatoes?}
+  10th Solanaceae Conference (SOL 2013), Pekino, Ĉinio;
+  13–18 oktobro 2013.
+  \vspace{1.5mm}
+  \\
+
+& \textbf{Joly V} kaj Matton DP.
+  \emph{Speciation genes in pollen-pistil interactions.}
+  9th Canadian Plant Genomics Workshop, Halifakso, NS, Kanado;
+  12–15 aŭgusto 2013.
+  \\
+
+\end{tabularx}
+
+\vspace{6mm}
+
+% OTHER PRESENTATIONS
+\section[Aliaj prezentoj]{Aliaj prezentoj \hfill \small{*Prezentisto}}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+2018
+& \textbf{Joly V} kaj Matton DP*.
+  \emph{Pre-zygotic barriers in inter-specific crosses: a leading role for small
+  cysteine-rich protein attractant in wild potatoes species ?}
+  Plant Biology 2018, Montrealo, QC, Kanado;
+  14–18 julio 2018.
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2017
+& \textbf{Joly V} kaj Matton DP*.
+  \emph{Pollination type recognition from a distance by the ovary is revealed
+  by a global transcriptomic analysis.}
+  5th International Symposium on Plant Signaling and Behavior, Matsue, Japanio;
+  26 junio – 1 julio 2017.
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2013
+& Liu Y*, Bai F, \textbf{Joly V} kaj Matton DP.
+  \emph{Identification of female gametophyte-specific CRPs and isolation of
+  pollen tube guidance attractant(s) in solanaceous species.}
+  Journées du Centre SÈVE, Wendake, QC, Kanado;
+  7–8 novembro 2013.
+  \vspace{1.5mm}
+  \\
+
+& Tebbji F, \textbf{Joly V} kaj Matton DP*. \emph{Pollination type recognition
+  from a distance by the ovary is revealed by a global transcriptomic analysis.}
+  10th Solanaceae Conference (SOL 2013), Pekino, Ĉinio;
+  13–18 oktobro 2013.
+  \vspace{1.5mm}
+  \\
+
+& Liu Y*, \textbf{Joly V} kaj Matton DP.
+  \emph{Isolation and characterization of the pollen tube attractant from}
+  Solanum chacoense. [sama konferenco].
+  \\
+
+\multicolumn{2}{c}{} \\
+
+2011
+& Daigle C*, \textbf{Joly V} kaj Matton DP.
+  \emph{Discovering new MAPK signalling cascades involved in plant reproduction
+  using co-expression analyses and deep transcriptomic sequencing of ovule
+  and pollen tubes.}
+  7th Canadian Plant Genomics Workshop, Niagara Falls, ON, Kanado;
+  22–25 aŭgusto 2011.
+  \\
+
+\end{tabularx}
+
+\newpage
+
+% TEACHING
+\section{Instruado}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+{\heavy Planta}
+& {\heavy Ĉefasistanto,} {\bfseries 2013--2018} \\
+{\heavy fiziologio}
+& {\heavy Asistanto,} {\bfseries 2011--2012} \\
+& {\em Planta fiziologio, praktikaj kursoj, P-ro Jean Rivoal Universitato de Montrealo}
+  \vspace{1mm} \\
+& •~Instrua ŝarĝo: 140 horoj por kvarono, ĉirkaŭ 80 lernantoj \\
+& •~Semajna klasoj inkluzive de prelego (0:45) kaj praktika laboro (2:30) \\
+& •~Superrigardo de 1--2 asistantoj \\
+
+\multicolumn{2}{c}{} \\
+
+\heavy{Molekula}
+& {\heavy Asistanto,} {\bfseries 2014--2016} \\
+\heavy{biologio}
+& {\em Molekula biologio, praktikaj kursoj, P-ro Daniel P. Matton, Universitato de Montrealo}
+  \vspace{1mm} \\
+& •~Instrua ŝarĝo: 110 horoj por kvarono, 10–20 lernantoj \\
+\end{tabularx}
+
+\vspace{6mm}
+
+\section{Superrigardo de staĝantoj}
+
+\begin{tabularx}{\textwidth}{@{}r|llll@{}}
+{\heavy Gradstudantoj}
+ & \multicolumn{4}{X}{\small\em Ĉi tiuj latin-amerikaj studentoj estis gastigitaj en la laboratorio de mia profesoro kiel parto de la Programo de Futuraj Lideroj en la Amerikoj (PFLA-ELAP) de la Registaro de Kanado. Mi estis ilia superrigardisto por 5- al 6-monataj staĝoj rilatigitaj al mia esplorprojekto. \vspace{2mm}} \\
+ & \textbf{• Kelly Rodrigues} & 2018-19 & Ph.D. & Univ. de San-Paŭlo (Brazilo) \\
+ & \textbf{• Federico Ceriotti} & 2017-18 & M.Sc. & Nac. Univ. de Kujo (Argentino) \\
+ & \textbf{• Carlos Bravo} & 2016-17 & Ph.D. & Nac. Univ. de Meksiko (Meksiko) \\
+ & \textbf{• Laura González} & 2016 & Ph.D. & Nac. Univ. de Kordobo (Argentino) \\
+ & \textbf{• Mariana Quiroga} & 2015 & Ph.D. & Nac. Univ. de Kordobo (Argentino) \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy B.Sc. studantoj}
+ & \multicolumn{4}{X}{\small\em Mi superrigardis ĉi tiujn  studentojn por 4- al 6-monataj staĝoj necesaj por ilia bakalaŭra programo. \vspace{2mm}} \\
+ & \textbf{• Maude Dorval} & 2018 & B.Sc. & Univ. de Montrealo (Kanado) \\
+ & & 2017 & DEC & Kolegio Ahuntsic (Kanado) \\
+ & \textbf{• Anna Zaro Sánchez} & 2017 & B.Sc. & Univ. de Barcelono (Hispanio) \\
+ & \textbf{• Francis Banville} & 2017 & B.Sc. & Univ. de Montrealo (Kanado) \\
+ & \textbf{• Andréa Davrinche} & 2014 &  B.Sc. & Univ. P. kaj M. Curie (Francio) \\
+ & \textbf{• Ella Gangbe} &  2013 & B.Sc. & Univ. de Montrealo (Kanado) \\
+ & \textbf{• Tissicca Hour} &  2012 & B.Sc. & Univ. de Montrealo (Kanado) \\
+\end{tabularx}
+
+\newpage
+
+
+% SCHOLARSHIPS AND AWARDS
+\section[Stipendioj kaj premioj]{Stipendioj kaj premioj
+         \hfill \small{{\mdseries\faStar}~Grava stipendio aŭ premio}}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+2018
+
+& \textbf{Vojaĝ-stipendio “Jacques-Rousseau”} \\
+& Plantbiologio Esplorinstituto, Universitato de Montrealo, 800~CAD \\
+
+\multicolumn{2}{c}{} \\
+
+2017
+
+& \faStar~\textbf{Plejboneca stipendio “Hydro-Québec” (2-a jaro)} \\
+& Hydro-Québec (nacia elektra kompanio), 25 000~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Stipendio por finantaj doktoriĝontoj (BFED)} \\
+& Fakultato de Diplomiĝintaj kaj Postdoktoriĝaj Studoj, Univ. de Montrealo, 8 400~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio “Jacques-Rousseau”} \\
+& Plantbiologio Esplorinstituto, Universitato de Montrealo, 1 500~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio (\emph{Bourse d'appui à la diffusion des résultats de recherche})} \\
+& Fakultato de Diplomiĝintaj kaj Postdoktoriĝaj Studoj, Univ. de Montrealo, 500~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Honora mencio por studenta parola prezento} \\
+& CSPB Eastern Regional Meeting \\
+
+\multicolumn{2}{c}{} \\
+
+2016
+
+& \faStar~\textbf{Plejboneca stipendio “Hydro-Québec”} \\
+& Hydro-Québec (nacia elektra kompanio), 25 000~CAD
+  \vspace{1.3mm} \\
+
+& \faStar~\textbf{Doktoriĝonta stipendio de la Registaro de Kebekio} \\
+& Fonds Québécois de Recherche – Nature et Technologies, 13 333~CAD
+  \vspace{1.3mm} \\
+
+& \faStar~\textbf{Premio “MITACS Globalink” – Somera programo de la JSPS} \\
+& MITACS / Japanese Society for the Promotion of Science, 534 000~JPY
+  \vspace{1.3mm} \\
+
+& \textbf{Premio de la plej bona gradigita studenta afiŝo} \\
+& Frontiers in Plant Reproduction Biology, Konf. “Plant Reproduction 2016”, 300~USD
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio “Jacques-Rousseau”} \\
+& Plantbiologio Esplorinstituto, Universitato de Montrealo, 1 500~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-subvencio “PARSECS”} \\
+& FAÉCUM, Universitato de Montrealo, 400~CAD \\
+
+\multicolumn{2}{c}{} \\
+
+2015
+
+& \faStar~\textbf{Plejboneca stipendio “Catherine-Frédette” pri biologio kaj neŭrologio} \\
+& Fakultato de Diplomiĝintaj kaj Postdoktoriĝaj Studoj, Univ. de Montrealo, 5 000~CAD
+  \vspace{1.3mm} \\
+
+& \faStar~\textbf{Doktoriĝonta stipendio “FBSB” de la Departamento de Biologio} \\
+& Universitato de Montrealo, 1 500~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Premio de la prezidanto por la plej bona studenta parola prezento} \\
+& Kanada Societo de Plantaj Biologoj (CSPB-SCBV), Konferenco “Botany 2015”, 500~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Premio de la plej bona studenta afiŝo} \\
+& Compute Canada, High Performance Computing Symposium HPCS 2015, 500~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio “G.-H. Duff”} \\
+& Kanada Societo de Plantaj Biologoj (CSPB-SCBV), 340~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio “Jacques-Rousseau”} \\
+& Plantbiologio Esplorinstituto, Universitato de Montrealo, 770~CAD
+  \vspace{1.3mm} \\
+
+& \faStar~\textbf{Plejboneca stipendio de la Fakultato de Diplomiĝintaj kaj Postdoktoriĝaj Studoj} \\
+& Universitato de Montrealo, 3 000~CAD \\
+
+\end{tabularx}
+
+\section*{Stipendioj kaj premioj \small{(daŭrigo)}
+          \hfill \small{{\mdseries\faStar}~Grava stipendio aŭ premio}}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+2014
+
+& \faStar~\textbf{Stipendio “Pehr-Kalm”} \\
+& Botanika Ĝardeno de Montrealo, 2 000~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio port internaciaj staĝoj} \\
+& Registaro de Kebekio (FRQNT) – Centre SÈVE, 3 815~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio “Jacques-Rousseau”} \\
+& Plantbiologio Esplorinstituto, Universitato de Montrealo, 1 760~CAD \\
+
+\multicolumn{2}{c}{} \\
+
+2013
+
+& \faStar~\textbf{Plejboneca stipendio “Marie-Victorin”} \\
+& Plantbiologio Esplorinstituto, Universitato de Montrealo, 3 000~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Premio de la plej bona parola prezento} \\
+& Konferenco “Journées du Centre SÈVE”, 300~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio “Jacques-Rousseau”} \\
+& Plantbiologio Esplorinstituto, Universitato de Montrealo, 850~CAD
+  \vspace{1.3mm} \\
+
+& \textbf{Premio de la plej bona parola prezento} \\
+& Simpozio de biologio, Universitato de Montrealo, 100~CAD \\
+
+\multicolumn{2}{c}{} \\
+
+2012
+
+& \faStar~\textbf{Majstra stipendio “FBSB” de la Departamento de Biologio} \\
+& Universitato de Montrealo, 1 200~CAD
+  \vspace{1.3mm} \\
+
+& \faStar~\textbf{Stipendio por akcelita M.Sc.-al-Ph.D. transiro} \\
+& Fakultato de Diplomiĝintaj kaj Postdoktoriĝaj Studoj, Univ. de Montrealo, 14 000~CAD \\
+
+\multicolumn{2}{c}{} \\
+
+2011
+
+& \textbf{Vojaĝ-stipendio por studenta interŝanĝo en Kanado} \\
+& Franca registaro (CROUS), 1 600~EUR
+  \vspace{1.3mm} \\
+
+& \textbf{Plejboneca stipendio “PIL” por studenta interŝanĝo en Kanado} \\
+& Universitato Pierre-kaj-Marie-Curie (Parizo VI), 1 500~EUR
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio “AMIÉ” por studenta interŝanĝo en Kanado} \\
+& Franca regiona aŭtoritato (\emph{Conseil régional}), 2 800~EUR
+  \vspace{1.3mm} \\
+
+& \textbf{Vojaĝ-stipendio “Campus'Trotter” por studenta interŝanĝo en Kanado} \\
+& Franca loka aŭtoritato (\emph{Conseil général}), 700~EUR \\
+
+\multicolumn{2}{c}{} \\
+
+2010
+
+& \textbf{Plej bona bakalaŭra studento de biologio post la finaj ekzamenoj de junio 2010} \\
+& Universitato Pierre-kaj-Marie-Curie (Parizo VI) \\
+
+\multicolumn{2}{c}{} \\
+
+2008
+
+& \faStar~\textbf{Plejboneca stipendio por bakalaŭraj studoj} \\
+& Franca registaro (CROUS), 5 400~EUR \\
+
+
+\end{tabularx}
+
+\newpage
+
+% COMMITMENTS
+\section{Devontigo}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+{\heavy Societoj}
+
+ & {\heavy Usona Societo de Plantaj Biologoj (ASPB),} {\bfseries ekde 2016}
+   \vspace{2mm} \\
+
+ & {\heavy Kanada Societo de Plantaj Biologoj (CSPB-SCBV),} {\bfseries ekde 2014}
+   \vspace{2mm} \\
+
+ & {\heavy Interacia Asocio por Esploro pri Seksa} \\
+ & {\heavy Reproduktado de Plantoj (IASPRR),} {\bfseries ekde 2015}
+   \vspace{2mm} \\
+
+ & {\heavy Asocio de Biologoj Kebekiaj (ABQ),} {\bfseries 2013--2018}
+   \vspace{2mm} \\
+
+ & {\heavy Franca Societo de Botanikoj (SBF),} {\bfseries 2010--2011}
+   \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy Studentaj}
+  & {\heavy Asocio de Naturalista Studentoj \emph{Timarcha},} {\bfseries 2010--2011} \\
+{\heavy asocioj}
+  & Universitato Pierre-kaj-Marie-Curie (UPMC), Parizo, Francio
+    \vspace{2mm} \\
+
+  & {\heavy Ekologia komitato \emph{Éco-école},} {\bfseries 2006--2008} \\
+  & Lycée Saint-Sauveur ($\approx$ mezlernejo), Redon, Francio \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy Voluntulado}
+
+ & {\heavy Voluntula franca instruisto por enmigrintoj,} {\bfseries 2015--2016} \\
+ & Komunuma Centro \emph{La Maison de l’Amitié}, Montrealo, QC, Kanado \\
+ & •~3-horaj lecionoj ĉiun semajnon kun 10-20 studentoj
+   \vspace{2mm} \\
+
+ & {\heavy Kontribuanto al diversaj interretaj projektoj:} \\
+ & •~Verkisto kaj tradukisto por \emph{Vikipedio}
+   (artikoloj pri biologio), ekde 2008 \\
+ & •~Volontula kartografiisto por \emph{OpenStreetMap}, ekde 2015 \\
+ & •~Herbaria ciferecaĵo por la Pariza Nacia Muzeo
+     de Natura Historio (Projekto “\emph{Les Herbonautes}”), 2015 \\
+
+\end{tabularx}
+
+\vspace{6mm}
+
+% OTHER SKILLS
+\section{Aliaj kompetentoj}
+
+\begin{tabularx}{\textwidth}{@{}r|X@{}}
+
+{\heavy Lingvoj}
+& \textbf{Franca,} denaska lingvo \\
+& \textbf{Angla,} flua \\
+& \textbf{Hispana,} flua \\
+& \textbf{Itala,} meza \\
+& \textbf{Esperanto kaj Japana,} komencanto \\
+
+\multicolumn{2}{c}{} \\
+
+{\heavy Komputiko}
+& \textbf{Programado:} Python kaj R. Bazaj de C kaj Perl.
+  \vspace{2mm} \\
+
+& \textbf{TTT:} HTML/CSS, Jekyll.
+  \vspace{2mm} \\
+
+& \textbf{Operaciumoj:} Linukso (\emph{Ubuntu}, \emph{Fedora},
+  \emph{CentOS}), Mac OS X, Windows.
+  \vspace{2mm} \\
+
+& \textbf{Biokomputiko:} vic-rekonstruiloj (\emph{Trinity}, \emph{CLC}, etc.);
+  liniigiloj por mallongaj vicoj (\emph{Bowtie}, \emph{TopHat}, etc.);
+  vic-serĉiloj kaj liniigiloj (\emph{BLAST}, etc.);
+  prinotiloj (\emph{BLAST2GO}, \emph{PFAMscan}, \emph{SignalP}, etc.)
+  \vspace{2mm} \\
+
+& \textbf{Oficejaj programaroj:} \LaTeX, \emph{LibreOffice}/\emph{OpenOffice},
+  \emph{Microsoft Office}
+  \vspace{2mm} \\
+
+& \textbf{Prilaborado de bildoj:} \emph{GIMP}, \emph{Inkscape}, \emph{ImageJ},
+  \emph{Adobe Photoshop}, \emph{Cytoscape} ; \emph{AxioVision} (stiradilo por mikroskopoj \emph{Zeiss}) \\
+
+\end{tabularx}
+
+\end{document}

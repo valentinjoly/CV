@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.8.20)  8 OCT 2018 03:45
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.8.20)  9 OCT 2018 15:48
  restricted system commands enabled.
 **Valentin_Joly_CV_en.tex
 (./Valentin_Joly_CV_en.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.098 seconds
+luaotfload | main : initialization completed in 0.097 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -997,13 +997,13 @@ Overfull \vbox (20.32909pt too high) detected at line 82
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}<../valentin.j
 pg>]
-Underfull \hbox (badness 3780) in paragraph at lines 335--335
+Underfull \hbox (badness 3780) in paragraph at lines 336--336
 []|\EU2/Lato(0)/bx/n/12 Joly V\EU2/Lato(0)/m/n/12 , Liu Y and Mat-ton DP. Com-p
 ar-a-tive RNA-sequencing re-veals fe-male
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 335--335
+Underfull \hbox (badness 1590) in paragraph at lines 336--336
 \EU2/Lato(0)/m/n/12 gameotphyte-sac spe-cific tran-scripts in the \EU2/Lato(0)/
 m/it/12 frk1 \EU2/Lato(0)/m/n/12 em-bryo sac-less mu-tant from
  []
@@ -1011,13 +1011,13 @@ m/it/12 frk1 \EU2/Lato(0)/m/n/12 em-bryo sac-less mu-tant from
 [2] [3] [4] [5] [6] [7] [8] 
 AED: lastpage setting LastPage
 [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 965.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 965.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 964.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 964.
  (./Valentin_Joly_CV_en.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 965.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 965.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 964.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 964.
 Package rerunfilecheck Info: File `Valentin_Joly_CV_en.out' has not changed.
-(rerunfilecheck)             Checksum: C40C5C30064EE68E15C7B10CBB9CAB72;770.
+(rerunfilecheck)             Checksum: 0643F73286ED9F932DDE8DC2D35B0958;763.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -1026,7 +1026,7 @@ Here is how much of LuaTeX's memory you used:
  423 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 5 attribute, 55 glue_spec, 5 attribute_list
 , 2 write nodes
-   avail lists: 1:2,2:1365,3:260,4:53,5:1259,6:5205,7:1816,8:419,9:655,10:11,11:
+   avail lists: 1:2,2:1365,3:260,4:51,5:1259,6:5205,7:1816,8:419,9:655,10:11,11:
 524
  25291 multiletter control sequences out of 65536+600000
  62 fonts using 14670295 bytes
@@ -1038,7 +1038,7 @@ etype/public/lato/Lato-Lig.ttf></usr/share/fonts/lato/Lato-Regular.ttf></usr/sha
 re/texlive/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf></usr/sh
 are/fonts/lato/Lato-Bold.ttf></usr/share/fonts/lato/Lato-Heavy.ttf></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Valentin_Joly_CV_en.pdf (9 pages, 209981 bytes).
+Output written on Valentin_Joly_CV_en.pdf (9 pages, 210115 bytes).
 
 PDF statistics: 245 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams

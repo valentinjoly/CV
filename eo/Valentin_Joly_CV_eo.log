@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.8.20)  9 OCT 2018 21:47
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.8.20)  9 OCT 2018 22:48
  restricted system commands enabled.
 **Valentin_Joly_CV_eo.tex
 (./Valentin_Joly_CV_eo.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.099 seconds
+luaotfload | main : initialization completed in 0.103 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1042,7 +1042,7 @@ etype/public/lato/Lato-Lig.ttf></usr/share/fonts/lato/Lato-Regular.ttf></usr/sha
 re/texlive/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf></usr/sh
 are/fonts/lato/Lato-Bold.ttf></usr/share/fonts/lato/Lato-Heavy.ttf></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Valentin_Joly_CV_eo.pdf (9 pages, 209744 bytes).
+Output written on Valentin_Joly_CV_eo.pdf (9 pages, 209743 bytes).
 
 PDF statistics: 245 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams

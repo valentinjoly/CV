@@ -1,0 +1,9 @@
+# Images
+*.svg
+*.png
+*.jpg
+
+# Autres fichiers
+Archives/
+*.ods
+*.bib
